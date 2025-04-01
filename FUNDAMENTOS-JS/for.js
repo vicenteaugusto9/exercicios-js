@@ -27,3 +27,42 @@ while( opcao != -1){
         console.log(`opcao escolhida = ${opcao}`)
 }
 console.log('ate a a proxima ')
+
+let numero= 2
+if (numero > 0)
+    console.log("Positivo")
+else if(numero < 0)
+    console.log("Negativo")
+else
+console.log("Zero")
+
+let idade = 20
+
+if (idade <= 12)
+    console.log("Crianca")
+else if(idade<=17)
+    console.log("Adolescente")
+else if(idade<=59)
+    console.log("Adulto")
+else
+    console.log("Idoso")
+
+
+let numeroSecreto= Math.floor(Math.random()*10 )+1
+while(true){
+    let palpite =parseInt(prompt("Adivinhe O numero(1-10:"))
+    if (palpite ===numeroSecreto){
+        console.log("Aceertou!!")
+        break
+    }
+      
+    else
+    console.log("Errou tente novamente!!")
+}
+
+let senhacorreta = 1234
+let senha 
+do {
+    senha= prompt("Digite a senha:")
+} while (senha !== senhacorreta)
+    console.log("acesso permitdo")    
